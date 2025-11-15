@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -105,7 +109,7 @@
       #161616 100%
     ),
     url(../img/header.jpg);
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -133,7 +137,17 @@
   font-size: 1.5rem;
 }
 
+@media (max-width: 767.98px) {
+  .masthead {
+    padding: 10rem 0 7rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .masthead {
+    background-position: center;
+  }
+
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -225,6 +239,29 @@
 .about-section .about-text {
   padding: 3rem;
   font-size: 90%;
+}
+
+.about-section .about-text ul {
+  text-align: left;
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.about-section .about-text ul li {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 575.98px) {
+  #portfolio .col-sm-6 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+  #portfolio .portfolio-box img {
+    height: 120px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 992px) {
